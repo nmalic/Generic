@@ -2,7 +2,7 @@ public class Stack<T> {
     private Object[] array;
     private int size;
     private int capacity;
-    private Stack(){
+    public Stack(){
         this(10);
     }
     public Stack(int capacity){
