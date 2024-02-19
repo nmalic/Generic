@@ -23,4 +23,11 @@ public class Stack<T> {
         if (size == 0){ throw new StackEmptyException("Stack is empty.");}
         return (T) this.array[size -1];
     }
+    public String list() {
+        String out = "";
+        for (int i = size - 1; i >= 0; i--) {
+            out += this.array[i] + "; ";
+        }
+        return out;
+    }
 }
